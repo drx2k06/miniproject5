@@ -1,0 +1,57 @@
+{
+  "model_name": "Gradient Boosting",
+  "algorithm": "GradientBoostingRegressor",
+  "trained_at_utc": "2026-10-28T07:37:26.095029+00:00",
+  "sha256_checksum": "d9458baca9e618f881e6951b99b476cc3d0ec2059307374dbf364eceaf60b43a",
+  "features": [
+    "area",
+    "bedrooms",
+    "bathrooms",
+    "age",
+    "parking",
+    "locality",
+    "furnished_status",
+    "has_amenities"
+  ],
+  "target": "price",
+  "test_metrics": {
+    "MAE": 4.9435,
+    "RMSE": 6.6191,
+    "MAPE (%)": 5.86,
+    "R2": 0.9717,
+    "MedAE": 4.0913,
+    "Max_Error": 34.0276
+  },
+  "cv_metrics": {
+    "cv_r2_mean": 0.971538949045037,
+    "cv_r2_std": 0.007908558889184418,
+    "cv_mae_mean": 4.657767957891024,
+    "cv_mae_std": 0.40532407610226184,
+    "cv_rmse_mean": 6.718738578292326,
+    "cv_rmse_std": 1.2010741313329973
+  },
+  "residual_stats": {
+    "residual_mean": 0.6753017396492299,
+    "residual_std": 6.584585456043801,
+    "residual_min": -12.47676984777312,
+    "residual_max": 34.02759833714279,
+    "residual_p95": 11.30799507133902
+  },
+  "interval_coverage": {
+    "picp_coverage_pct": 95.83,
+    "mean_interval_width": 25.81,
+    "target_coverage_pct": 95.0
+  },
+  "feature_importances": {
+    "Area (sq ft)": 64.45,
+    "Locality: Urban Prime": 28.24,
+    "Locality: Suburban": 4.09,
+    "Property Age (years)": 1.63,
+    "Bedrooms (BHK)": 0.58,
+    "Furnished: None": 0.32,
+    "Furnished: Semi": 0.29,
+    "Parking Spaces": 0.22,
+    "Society Amenities": 0.1,
+    "Bathrooms": 0.08
+  }
+}
